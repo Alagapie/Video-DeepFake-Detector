@@ -32,7 +32,7 @@ _CACHE_TTL = 600
 
 def _clean_cache():
     now = time.time()
-    stale = [k for k in list(_result_cache.keys()) if now - _result_cache[k][1] > _CACHE_TTL]
+    stale = [k for k in list(_result_cache.keys()) if now - _result_cache[k][2] > _CACHE_TTL]
     for k in stale:
         del _result_cache[k]
 
