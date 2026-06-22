@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+*.mp4
+*.pdf
+.git/
+README.md
+kaggle/
+weights/
+.model_hub/
+.vscode/
+.idea/
+*.egg-info/
+dist/
+build/
