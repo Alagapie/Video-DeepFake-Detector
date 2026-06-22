@@ -1,0 +1,28 @@
+models:
+  resnet18:
+    repo_id: abraraltaf92/deepfake-detection-models
+    filename: resnet18_best.pth
+  vit_b16:
+    repo_id: abraraltaf92/deepfake-detection-models
+    filename: vit_base_patch16_224_best.pth
+
+weights_dir: weights
+
+inference:
+  frame_sample_rate: 3
+  max_frames: 90
+  face_confidence: 0.5
+  target_size: 224
+
+fusion:
+  model_path: weights/xgb_model.json
+  real_threshold: 0.85
+  fake_threshold: 0.25
+  pulse_override: 0.85
+
+rppg:
+  fps: 30
+  bandpass_low: 0.7
+  bandpass_high: 4.0
+  window_sec: 6
+  methods: [chrom, pos]

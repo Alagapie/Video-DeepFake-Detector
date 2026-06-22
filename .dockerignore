@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.mp4
+*.pdf
+.git/
+.gitignore
+Dockerfile
+docker-compose.yml
+README.md
+kaggle/
+weights/
+.model_hub/
